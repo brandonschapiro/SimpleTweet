@@ -43,7 +43,60 @@
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
         android:layout_alignParentEnd="true"
-        android:layout_marginTop="0dp"
         android:layout_marginEnd="5dp"
-        android:text="TextView" />
+        android:text="6h"
+        android:textAlignment="textEnd" />
+
+    <ImageView
+        android:id="@+id/ivReply"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvBody"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="90dp"
+        android:layout_toStartOf="@+id/ivRetweet"
+        app:srcCompat="@drawable/reply_outline" />
+
+    <ImageView
+        android:id="@+id/ivRetweet"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvBody"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="100dp"
+        android:layout_toStartOf="@+id/ivLike"
+        app:srcCompat="@drawable/ic_vector_retweet_stroke" />
+
+    <TextView
+        android:id="@+id/tvRetweetCount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvBody"
+        android:layout_marginStart="-98dp"
+        android:layout_marginTop="22dp"
+        android:layout_toEndOf="@+id/ivRetweet"
+        android:text="123"
+        android:textSize="11sp" />
+
+    <ImageView
+        android:id="@+id/ivLike"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvBody"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="63dp"
+        app:srcCompat="@drawable/ic_vector_heart_stroke" />
+
+    <TextView
+        android:id="@+id/tvLikeCount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvBody"
+        android:layout_marginStart="-62dp"
+        android:layout_marginTop="22dp"
+        android:layout_toEndOf="@+id/ivLike"
+        android:text="123"
+        android:textSize="11sp" />
+
 </RelativeLayout>
